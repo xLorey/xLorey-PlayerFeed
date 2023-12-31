@@ -1,0 +1,25 @@
+{
+  "name": "xLorey PlayerFeed",
+  "description": "The plugin displays messages in the chat about the connection/disconnection of a player from the server, his death in a beautiful way",
+  "id": "xlorey-playerfeed",
+  "version": "${version}",
+  "authors": [
+    "xLorey Team"
+  ],
+  "contact": [
+    "xlorey@mail.ru"
+  ],
+  "license": "MIT",
+  "icon": "icon.png",
+  "entrypoints": {
+    "client": [],
+    "server": [
+      "io.xlorey.PlayerFeed.Main"
+    ]
+  },
+  "controlsEntrypoint": "",
+  "dependencies": {
+    "project-zomboid": "=41.78.16",
+    "flux-loader": "=0.7.0"
+  }
+}

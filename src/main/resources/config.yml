@@ -1,0 +1,34 @@
+# The time allotted for reconnecting a player in case of death; if it does not have time, a message about leaving the server is displayed
+# Calculated in seconds
+disconnectWindowTime: 120
+# Is it necessary to write to the player event logs?
+writeLogFeed: true
+# Setting up chat messages
+notify:
+  # Player disconnect message from server
+  # <USERNAME> - replaced by the player's nickname
+  # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
+  playerDisconnect: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> отключился от сервера
+  # Player connect message from server
+  # <USERNAME> - replaced by the player's nickname
+  # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
+  playerConnect: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> подключился к серверу
+  # Player death message
+  # <USERNAME> - replaced by the player's nickname
+  # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
+  playerDeath: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> погиб смертью храбрых
+  # Player death message in PVP
+  # <USERNAME> - replaced by the player's nickname
+  # <ATTACKER> - replaced nickname of the player who is considered the killer
+  # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
+  playerDeathPvp: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> погиб смертью храбрых в схватке с <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER>
+  # Player ban message
+  # <USERNAME> - replaced by the player's nickname
+  # <REASON> - replaced reason for punishment
+  # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
+  playerBan: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был заблокирован по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>'
+  # Player kick message
+  # <USERNAME> - replaced by the player's nickname
+  # <REASON> - replaced reason for punishment
+  # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
+  playerKick: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>'
