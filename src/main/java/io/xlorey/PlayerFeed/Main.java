@@ -12,7 +12,9 @@ import zombie.core.raknet.UdpConnection;
 import zombie.network.GameServer;
 
 import java.nio.ByteBuffer;
+import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.*;
 
 /**
@@ -24,6 +26,7 @@ public class Main extends Plugin {
     private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private final Map<String, ScheduledFuture<?>> disconnectTimers = new ConcurrentHashMap<>();
 
+    private final Random random = new Random();
     /**
      * Initializes the plugin and loads the default configuration.
      */
@@ -58,6 +61,20 @@ public class Main extends Plugin {
     }
 
     /**
+     * Retrieves the message text from the list by key and index.
+     * @param key Key for accessing the list of messages in the configuration.
+     * @return Message text or empty string if list is empty or key not found.
+     */
+    private String getMessageText(String key) {
+        List<Object> messageList = getConfig().getList(key);
+        if (messageList == null || messageList.isEmpty()) {
+            return "";
+        }
+
+        return (String) messageList.get(random.nextInt(messageList.size()));
+    }
+
+    /**
      * Handles the player disconnect event. Notifies other players after a specified delay.
      * @param playerInstance   The instance of the player who disconnected.
      * @param playerConnection The connection information of the player.
@@ -66,7 +83,10 @@ public class Main extends Plugin {
     public void onPlayerDisconnectHandler(IsoPlayer playerInstance, UdpConnection playerConnection){
         ScheduledFuture<?> disconnectTask = scheduler.schedule(() -> {
 
-            String disconnectText = getConfig().getString("notify.playerDisconnect");
+            String disconnectText = getMessageText("notify.playerDisconnect");
+
+            if (disconnectText.isEmpty()) return;
+
             disconnectText = handleText(disconnectText, playerConnection.username);
 
             writeLog(String.format("Player '%s' (IP: %s | SteamID: %s) has disconnected from the server", playerConnection.username, playerConnection.ip, playerConnection.steamID));
@@ -93,7 +113,10 @@ public class Main extends Plugin {
             return;
         }
 
-        String connectText = getConfig().getString("notify.playerConnect");
+        String connectText = getMessageText("notify.playerConnect");
+
+        if (connectText.isEmpty()) return;
+
         connectText = handleText(connectText, playerConnection.username);
 
         writeLog(String.format("Player '%s' (IP: %s | SteamID: %s) connected to the server", playerConnection.username, playerConnection.ip, playerConnection.steamID));
@@ -127,7 +150,7 @@ public class Main extends Plugin {
                 ));
             }
 
-            deathText = getConfig().getString("notify.playerDeath");
+            deathText = getMessageText("notify.playerDeath");
         } else{
             UdpConnection connectionAttacker = GameServer.getConnectionFromPlayer(attacker);
             if (connectionPlayer != null && connectionAttacker != null) {
@@ -141,11 +164,13 @@ public class Main extends Plugin {
                         attacker.username
                 ));
             }
-            deathText = getConfig().getString("notify.playerDeathPvp");
+            deathText = getMessageText("notify.playerDeathPvp");
             deathText = deathText.replace("<ATTACKER>", attacker.getUsername());
         }
 
         deathText = handleText(deathText, player.getUsername());
+
+        if (deathText.isEmpty()) return;
 
         ServerUtils.sendServerChatMessage(deathText);
     }
@@ -159,7 +184,9 @@ public class Main extends Plugin {
     public void onPlayerKickHandler(IsoPlayer player, String reason){
         if (reason.isEmpty()) reason = "-";
 
-        String kickText = getConfig().getString("notify.playerKick");
+        String kickText = getMessageText("notify.playerKick");
+        if (kickText.isEmpty()) return;
+
         kickText = handleText(kickText, player.username);
         kickText = kickText.replace("<REASON>", reason);
 
@@ -185,7 +212,10 @@ public class Main extends Plugin {
     public void onPlayerBanHandler(IsoPlayer player, String reason){
         if (reason.isEmpty()) reason = "-";
 
-        String banText = getConfig().getString("notify.playerBan");
+        String banText = getMessageText("notify.playerBan");
+
+        if (banText.isEmpty()) return;
+
         banText = handleText(banText, player.username);
         banText = banText.replace("<REASON>", reason);
 

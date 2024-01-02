@@ -8,27 +8,87 @@ notify:
   # Player disconnect message from server
   # <USERNAME> - replaced by the player's nickname
   # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
-  playerDisconnect: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> отключился от сервера
+  playerDisconnect:
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> мгновенно исчез! Куда он делся?"
+    - "<RGB:1,1,1> Внимание! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> только что покинул нас в неизвестном направлении."
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> взял перерыв. Надеемся увидеть его снова."
+    - "<RGB:1,1,1> Наступила тишина... Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покинул игру."
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> отключился. Возвращайся скорее!"
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> решил отдохнуть. До скорой встречи в игре!"
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> вышел на короткий перерыв. Ожидаем его возвращения."
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> закрыл портал. Сессия окончена."
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> отправился в путешествие вне сервера."
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покидает нас, но приключение продолжается!"
   # Player connect message from server
   # <USERNAME> - replaced by the player's nickname
   # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
-  playerConnect: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> подключился к серверу
+  playerConnect:
+    - "<RGB:1,1,1> На горизонте появился герой! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> теперь с нами."
+    - "<RGB:1,1,1> Сканирование завершено. Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> успешно подключился."
+    - "<RGB:1,1,1> Звездные врата открыты, Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> вступает в игру."
+    - "<RGB:1,1,1> Эхо легенды! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> присоединился к нам."
+    - "<RGB:1,1,1> Приключение начинается! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> теперь в игре."
+    - "<RGB:1,1,1> Поднять мост! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> пристыковался к серверу."
+    - "<RGB:1,1,1> Внимание, новый игрок на борту! Приветствуем <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1>."
+    - "<RGB:1,1,1> Виртуальный мир расширился! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> с нами."
+    - "<RGB:1,1,1> Портал активирован, Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> присоединяется к приключению."
+    - "<RGB:1,1,1> Игровой мир приветствует нового героя! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> вошел в игру."
   # Player death message
   # <USERNAME> - replaced by the player's nickname
   # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
-  playerDeath: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> погиб смертью храбрых
+  playerDeath:
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> погиб, сражаясь до последнего вздоха."
+    - "<RGB:1,1,1> Великий воин <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> пал в бою, но его дух останется вечным."
+    - "<RGB:1,1,1> Тень смерти настигла <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1>. Покойся с миром, герой."
+    - "<RGB:1,1,1> Легенды не умирают... Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> будет жить в наших сердцах."
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> отправился в последнее путешествие за пределы мира."
+    - "<RGB:1,1,1> Свет погас для <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1>. Его подвиги будут вспоминаться вечно."
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> закончил свой путь. Вечная слава герою!"
+    - "<RGB:1,1,1> Небеса получили нового героя. <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1>, мы никогда не забудем тебя."
+    - "<RGB:1,1,1> Судьба была жестока к <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1>, но его дух остается несокрушимым."
+    - "<RGB:1,1,1> След в истории оставлен... Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> прошел свой путь до конца."
   # Player death message in PVP
   # <USERNAME> - replaced by the player's nickname
   # <ATTACKER> - replaced nickname of the player who is considered the killer
   # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
-  playerDeathPvp: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> погиб смертью храбрых в схватке с <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER>
+  playerDeathPvp:
+    - "<RGB:1,1,1> Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> пал в легендарном бою с <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>."
+    - "<RGB:1,1,1> Эпическое противостояние! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был повержен в битве с <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>."
+    - "<RGB:1,1,1> В схватке титанов <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> проиграл бой <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>."
+    - "<RGB:1,1,1> Великий воин <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> упал в дуэли с <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>. Их имена войдут в историю."
+    - "<RGB:1,1,1> Встреча гладиаторов завершилась! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был побежден <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>."
+    - "<RGB:1,1,1> В битве за честь <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> погиб от руки <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>."
+    - "<RGB:1,1,1> Судьба решила! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> не смог противостоять <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <SPACE_SYMBOL> <RGB:1,1,1> в смертельной дуэли."
+    - "<RGB:1,1,1> Бой окончен! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> уступил <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>. Почет и уважение победителю!"
+    - "<RGB:1,1,1> Кровавая битва завершена. <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> проиграл жизнь в поединке с <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>."
+    - "<RGB:1,1,1> Сражение легенд! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покинул арену, уступив <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <ATTACKER> <RGB:1,1,1>."
   # Player ban message
   # <USERNAME> - replaced by the player's nickname
   # <REASON> - replaced reason for punishment
   # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
-  playerBan: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был заблокирован по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>'
+  playerBan:
+    - "<RGB:1,1,1> Закон неумолим! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был заблокирован по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Волшебный щит справедливости! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> отлучен от игры за <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Порядок восстановлен! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> получил бан за <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Правила - это правила! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> заблокирован по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Игровой мир говорит 'нет'! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> забанен за <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Безопасность превыше всего! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был заблокирован. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Нарушение порядка! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> вышел из игры навсегда. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Справедливость восторжествовала! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> получает бан. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> На страже правил! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> заблокирован по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Правила не обсуждаются! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> забанен. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
   # Player kick message
   # <USERNAME> - replaced by the player's nickname
   # <REASON> - replaced reason for punishment
   # <SPACE_SYMBOL> - replaced with a transparent symbol (needed for spaces after color)
-  playerKick: <RGB:1,1,1>Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>'
+  playerKick:
+    - "<RGB:1,1,1> Непрошенный гость! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут по причине <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Кто-то ушёл... <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> вышел наружу. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Дверь закрыта! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Время для ухода... Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покинул игру. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Выгоняем нежеланных! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут из игры. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Кикнут из рая! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> ушёл. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Пора уходить! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Терпения иссякло! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покинул сервер. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Кикнут вне зоны! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покинул игру. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Закрываем доступ! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут из сервера. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
