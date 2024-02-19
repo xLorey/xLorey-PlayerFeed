@@ -9,7 +9,7 @@ plugins {
  * Project group and version
  */
 group = 'io.xlorey.playerfeed'
-version = '0.3.0'
+version = '0.2.0'
 
 /**
  * Repositories used
