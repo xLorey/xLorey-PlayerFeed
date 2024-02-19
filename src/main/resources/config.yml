@@ -1,8 +1,6 @@
 # The time allotted for reconnecting a player in case of death; if it does not have time, a message about leaving the server is displayed
 # Calculated in seconds
 disconnectWindowTime: 120
-# Is it necessary to write to the player event logs?
-writeLogFeed: true
 # Setting up chat messages
 notify:
   # Player disconnect message from server
@@ -91,4 +89,4 @@ notify:
     - "<RGB:1,1,1> Пора уходить! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
     - "<RGB:1,1,1> Терпения иссякло! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покинул сервер. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
     - "<RGB:1,1,1> Кикнут вне зоны! <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> покинул игру. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
-    - "<RGB:1,1,1> Закрываем доступ! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут из сервера. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
+    - "<RGB:1,1,1> Закрываем доступ! Игрок <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> <USERNAME> <SPACE_SYMBOL> <RGB:1,1,1> был кикнут с сервера. Причина: <RGB:0.451,0.404,0.941> <SPACE_SYMBOL> '<REASON>' <SPACE_SYMBOL> <RGB:1,1,1> ."
